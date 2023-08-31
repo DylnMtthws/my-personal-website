@@ -3,7 +3,7 @@
   text-align: center;
   transform-origin: center;
   font-family: 'Boska-Variable', serif;
-  font-size: 10em;
+  font-size: 5em;
   color: #fff;
 }
 
@@ -13,7 +13,7 @@
   transform: scaleY(-1);
   margin-bottom: --50vh;
   font-family: 'Boska-Variable', serif;
-  font-size: 10em;
+  font-size: 5em;
   color: #fff;
 }
 
@@ -101,4 +101,3 @@ body, h1, h2, p, ul, li {
   .right-link:hover {
     color: #555;
   }
-  
