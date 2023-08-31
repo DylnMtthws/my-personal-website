@@ -5,15 +5,12 @@ body, h1, h2, p, ul, li {
   }
   
   /* FONTS */
-  @font-face {
-    font-family: mainFont;
-    src: url(mainFont.ttf);
-  }
+  @import url('boska.css');
 
   body {
-    font-family: mainFont;
+    font-family: 'Boska-Variable', sans-serif;
   }
-  
+
   /* header styles */
 
   .header {
