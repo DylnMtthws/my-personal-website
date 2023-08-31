@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <title>My Personal Website</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+    background-image: url('sky-background.jpg');
+    background-size: cover;
+    background-position: 45% 25%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Boska-Variable', sans-serif; 
+    color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+  }
+
+    /* Add your other CSS styles here */
+
+    .content {
+      padding: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>you never know when/why/how inspiration might strike</h1>
+  </header>
+  
+  <main class="content">
+    <section class="section">
+      <h2>rummage through my desk</h2>
+      <div class="desk">
+        <a href="pen.html"><img src="pen.jpg" alt="Pen"></a>
+        <a href="notebook.html"><img src="notebook.jpg" alt="Notebook"></a>
+        <a href="laptop.html"><img src="laptop.jpg" alt="Laptop"></a>
+        <a href="coffee.html"><img src="coffee.jpg" alt="Coffee"></a>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <p>&copy; 2023 Dylan Matthews</p>
+  </footer>
+</body>
 </html>
