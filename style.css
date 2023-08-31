@@ -1,4 +1,22 @@
 /* Reset default margin and padding */
+.top-title { /*first name at top*/
+  text-align: center;
+  transform-origin: center;
+  font-family: 'Boska-Variable', serif;
+  font-size: 10em;
+  color: #fff;
+}
+
+.bottom-title { /* upside down last name */
+  text-align: center;
+  transform-origin: center;
+  transform: scaleY(-1);
+  margin-bottom: --50vh;
+  font-family: 'Boska-Variable', serif;
+  font-size: 10em;
+  color: #fff;
+}
+
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
@@ -36,50 +54,51 @@ body, h1, h2, p, ul, li {
   
   .header h1 {
     font-family: 'Boska-Extralight', serif;
-    font-size: large; /* Adjust the font size as needed */
-    transform-origin: bottom;
+    font-size: 1em; /* Adjust the font size as needed */
+    position: center;
     margin: 50;
   }
-  
-  .header nav ul {
-    list-style: none;
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
   }
   
-  .header nav a {
-    text-decoration: none;
+  .navbar {
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+  }
+  
+  .left-link,
+  .right-link {
     color: #fff;
-    margin: 0 15px;
+    text-decoration: none;
+    font-weight: lighter;
+    padding: 10px 15px;
+    border-radius: 5px;
     transition: color 0.3s;
   }
   
-  .header nav a:hover {
-    color: #d4af37;
+  .left-link {
+    margin-right: auto;
   }
   
-  /* Main content styles */
-  .content {
-    padding: 20px;
+  .right-link {
+    margin-left: auto;
   }
   
-  .section {;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .section h2 {
-    font-family: 'Boska-Extralight';
-    color: #fff;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  /* Footer styles */
-  .footer {
-    color: #fff;
-    text-align: center;
-    padding: 5px;
+  .left-link:hover,
+  .right-link:hover {
+    color: #555;
   }
   
